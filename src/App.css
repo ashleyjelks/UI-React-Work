@@ -1,11 +1,13 @@
 .App {
+  background-color: #f1f1f2;
   font-family: 'Open Sans', sans-serif;
 }
 
 .App-header {
-  background-color: #22205f;
+  background-color: #fff;
   height: 50px;
   padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .App-logo {
