@@ -1,7 +1,7 @@
-Restless Bandit's UI exercise
-=============================
+Restless Bandit's UI task
+=========================
 
-Welcome! This exercise is designed to let you show us your skills with a typical front-end task.
+Welcome! This exercise is designed to let you show us how you work on a typical front-end task, in a way that's more representative of the real world than traditional whiteboard coding questions.
 
 It should take around 2 hours.
 
@@ -9,16 +9,17 @@ It should take around 2 hours.
 
 We've decided to explore a card-based layout for displaying candidates. Restless Bandit's algorithm has found and graded some hypothetical candidates, and our designer has created a mockup of how the layout should look (`card-layout.png` at the top level of this repo).
 
-We're using React, and we've got the project set up and ready to go. Your task is to build the UI shown in the mockup.
+We're using React, and we've got the project set up and ready to go. In `src/App.js`, you'll find a basic `App` component with the page header and the candidate data (currently being logged to the console) already there to get you started. Your task is to build the rest of the UI shown in the mockup.
 
 **What we're looking for:**
 - Accurate translation of the design
+- Candidates sorted by their grade
 - Tests for your components
 - Clean, consistent code style
 
-**Optional extensions:**
+**Optional extensions (pick one if you want to, but it's not necessary):**
 - Make the page responsive
-- Add search bar functionality - update the candidates as you type
+- Add basic search bar functionality - update the visible list of candidates as you type
 - Do something else cool - it can be anything you like!
 
 Feel free to change anything and add any libraries you want (just be sure to `npm install --save` them).
