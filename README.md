@@ -22,7 +22,7 @@ We're using React, and we've got the project set up and ready to go. In `src/App
 - Add basic search bar functionality - update the visible list of candidates as you type
 - Do something else cool - it can be anything you like!
 
-Feel free to change anything and add any libraries you want (just be sure to `npm install --save` them).
+Feel free to add any libraries you want (just be sure to `npm install --save` them).
 
 When you're done, check out the [submission instructions](#submitting).
 
@@ -31,7 +31,8 @@ Good luck!
 ## Installing
 
 1. Make sure you have Node.js installed (at least v4, preferably v6)
-2. In the project directory, run `npm install`
+2. Unzip the directory and `cd rb-ui-task`
+3. Run `npm install`
 
 ## Running
 
@@ -49,9 +50,8 @@ Launches the test runner in the interactive watch mode.
 
 ## Submitting
 
-1. `git format-patch master --stdout > your-name.patch`.
-    Or, if you worked straight off of master, use the commit sha preceding
-    your work.
-2. Email the patch to [](mailto:).
+1. From the project directory: `rm -rf node_modules`
+2. Zip/compress the directory
+2. Email the zipped directory to [](mailto:)
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
