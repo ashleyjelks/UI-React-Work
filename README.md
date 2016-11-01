@@ -52,6 +52,6 @@ Launches the test runner in the interactive watch mode.
 
 1. From the project directory: `rm -rf node_modules`
 2. Zip/compress the directory
-2. Email the zipped directory to [](mailto:)
+2. Email the zipped directory to [imogen@restlessbandit.com](mailto:imogen@restlessbandit.com)
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
