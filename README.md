@@ -12,12 +12,14 @@ We've decided to explore a card-based layout for displaying candidates. Restless
 We're using React, and we've got the project set up and ready to go. In `src/App.js`, you'll find a basic `App` component with the page header and the candidate data (currently being logged to the console) already there to get you started. Your task is to build the rest of the UI shown in the mockup.
 
 **What we're looking for:**
+
 * Accurate translation of the design
 * Candidates sorted by their grade
 * Tests for your components
 * Clean, consistent code style
 
 **Optional extensions (pick one if you want to, but it's not necessary):**
+
 * Make the page responsive
 * Add basic search bar functionality - update the visible list of candidates as you type
 * Do something else cool - it can be anything you like!
@@ -28,7 +30,7 @@ Feel free to add any libraries you would find useful (just be sure to `npm insta
 
 1. Make sure you have Node.js installed (at least v4, preferably v6)
 2. Create a new private fork (click 'Fork' in Bitbucket)
-3. Clone your fork (`git clone https://<yourusername>@bitbucket.org/<yourusername>/rb-ui-task.git`)
+3. Clone your fork `git clone https://<yourusername>@bitbucket.org/<yourusername>/rb-ui-task.git`
 4. `cd rb-ui-task`
 5. `npm install`
 6. Work on the task (it's fine to commit directly to `master` for this task)
@@ -41,10 +43,10 @@ Good luck!
 
 ### `npm start`
 
-Runs the app in the development mode.<br>
+Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
+The page will reload if you make edits.
 You will also see any lint errors in the console.
 
 ### `npm test`
