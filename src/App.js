@@ -1,8 +1,16 @@
 import React, { Component } from 'react';
+import Candidates from './Candidates';
 import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      candidates: []
+    };
+  }
 
   componentDidMount() {
     fetch('/candidates.json')
@@ -11,17 +19,25 @@ class App extends Component {
       })
       .then((candidates) => {
         console.log(candidates);
-      });
+        return this.setState({candidates: candidates});
+      })
   }
 
   render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="Restless Bandit logo" />
-        </header>
-      </div>
-    );
+    if (this.state.candidates !== 0) {
+      return (
+        <div className="App">
+          <header className="App-header">
+            <img src={logo} className="App-logo" alt="Restless Bandit logo" />
+          </header>
+          <main>
+            <Candidates candidates={this.state.candidates} />
+          </main>
+        </div>
+      );
+    } else {
+      return null
+    }
   }
 }
 
