@@ -19,6 +19,15 @@ class App extends Component {
       })
       .then((candidates) => {
         console.log(candidates);
+        candidates.sort(function(a,b){
+          if (a.grade > b.grade) {
+            return 1;
+          }
+          if (a.grade < b.grade) {
+            return -1;
+          }
+          return 0
+        })
         return this.setState({candidates: candidates});
       })
   }

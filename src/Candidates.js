@@ -14,8 +14,10 @@ import {
 
 
 const Candidates = ({ candidates }) => (
-  <GridList>
-  {candidates.map((candidate, index) => (
+  <GridList
+    cols={4}
+  >
+    {candidates.map((candidate, index) => (
     <Card key={index}>
     <Avatar
           color={deepOrange300}
