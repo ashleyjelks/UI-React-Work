@@ -13,3 +13,69 @@
 .App-logo {
   height: 100%;
 }
+
+.Section-form {
+  padding: 2% 0 0 75%;
+}
+
+.Searchbar {
+}
+
+.Section-main {
+  margin: 5%;
+}
+
+.Grid-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: baseline; /*OR STRETCH*/
+  align-content: center;
+}
+
+div.Grid-container div {
+  margin-bottom: 5%;
+}
+
+div.Card {
+  width: 75%;
+  height: 100%;
+  margin: auto;
+}
+
+.Avatar {
+  margin: 10% 0 0 80%;
+}
+
+.Card-title {
+
+}
+
+
+
+
+/*const styles = {
+    root: {
+      display: 'flex',
+      flexWrap: 'no-wrap',
+      justifyContent: 'space-around',
+    },
+    gridList: {
+      padding: 10,
+    },
+    card: {
+      height: 200,
+      // marginBottom:15,
+      borderRadius: 15,
+    },
+    avatar: {
+      marginLeft: 190,
+    },
+    cardHeader: {
+
+    },
+    cardTitle: {
+    }
+  };
+*/
