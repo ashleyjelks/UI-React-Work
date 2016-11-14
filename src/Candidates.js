@@ -4,7 +4,6 @@ import { Card, CardHeader, CardTitle } from 'material-ui/Card';
 import Avatar from 'material-ui/Avatar';
 import { white, indigo900, pink800, red500, grey600, pink900 } from 'material-ui/styles/colors';
 
-
 const Candidates = ({ candidates }) => {
   const style = {
     candidateName: {
