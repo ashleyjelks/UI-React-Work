@@ -2,7 +2,7 @@ import React from 'react';
 import { GridList } from 'material-ui/GridList';
 import { Card, CardHeader, CardTitle } from 'material-ui/Card';
 import Avatar from 'material-ui/Avatar';
-import { white, purple500, indigo900, pink800 } from 'material-ui/styles/colors';
+import { white, purple500, indigo900, pink800, red500, grey600, pink900 } from 'material-ui/styles/colors';
 
 
 const Candidates = ({ candidates }) => {
@@ -13,10 +13,18 @@ const Candidates = ({ candidates }) => {
     },
     cardTitle: {
       color: pink800,
-      fontSize: 15,
-      lineHeight: '100%'
-
+      fontSize: 16,
+      lineHeight: 1.25
+    },
+    cardSubtitle: {
+      color: grey600
     }
+  };
+
+  const gradeBackground = {
+    1: indigo900,
+    2: red500,
+    3: pink900
   };
 
   return (
@@ -28,12 +36,10 @@ const Candidates = ({ candidates }) => {
       <Card
         key={index}
         className="card"
-        style={style.Card}
-
       >
       <Avatar
         color={white}
-        backgroundColor={purple500}
+        backgroundColor={gradeBackground[candidate.grade]}
         size={30}
         className="Avatar"
       >
@@ -50,7 +56,6 @@ const Candidates = ({ candidates }) => {
         className="Card-title"
         titleStyle={style.cardTitle}
         subtitleStyle={style.cardSubtitle}
-
       />
       </Card>
     ))}
