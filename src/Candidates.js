@@ -2,22 +2,19 @@ import React from 'react';
 import { GridList } from 'material-ui/GridList';
 import { Card, CardHeader, CardTitle } from 'material-ui/Card';
 import Avatar from 'material-ui/Avatar';
-import { deepOrange300, purple500, indigo900, pink800 } from 'material-ui/styles/colors';
+import { white, purple500, indigo900, pink800 } from 'material-ui/styles/colors';
 
 
 const Candidates = ({ candidates }) => {
   const style = {
     cardHeader: {
-      fontSize: 25,
-      marginTop: -56,
+      fontSize: 20,
       color: indigo900
     },
     cardTitle: {
       color: pink800,
       fontSize: 15,
-
-    },
-    cardSubtitle: {
+      lineHeight: '100%'
 
     }
   };
@@ -30,10 +27,12 @@ const Candidates = ({ candidates }) => {
       {candidates.map((candidate, index) => (
       <Card
         key={index}
-        className="Card"
+        className="card"
+        style={style.Card}
+
       >
       <Avatar
-        color={deepOrange300}
+        color={white}
         backgroundColor={purple500}
         size={30}
         className="Avatar"

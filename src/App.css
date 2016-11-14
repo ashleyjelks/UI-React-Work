@@ -15,7 +15,7 @@
 }
 
 .Section-form {
-  padding: 2% 0 0 75%;
+  padding: 2% 0 0 65%;
 }
 
 .Searchbar {
@@ -29,53 +29,26 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: baseline; /*OR STRETCH*/
-  align-content: center;
+  justify-content: center;
+  padding: 0 10%;
 }
 
-div.Grid-container div {
-  margin-bottom: 5%;
-}
-
-div.Card {
-  width: 75%;
-  height: 100%;
+.card {
+  width: 65%;
+  height: 80%;
   margin: auto;
 }
 
-.Avatar {
-  margin: 10% 0 0 80%;
-}
-
 .Card-title {
-
+  padding: 0 16%;
+  margin-top: -15%;
 }
 
+.Avatar {
+  margin: 10% 0 0 70%;
+}
 
+.Card-header {
+  margin-top: -20%;
+}
 
-
-/*const styles = {
-    root: {
-      display: 'flex',
-      flexWrap: 'no-wrap',
-      justifyContent: 'space-around',
-    },
-    gridList: {
-      padding: 10,
-    },
-    card: {
-      height: 200,
-      // marginBottom:15,
-      borderRadius: 15,
-    },
-    avatar: {
-      marginLeft: 190,
-    },
-    cardHeader: {
-
-    },
-    cardTitle: {
-    }
-  };
-*/
