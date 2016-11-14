@@ -5,24 +5,32 @@
 
 .App-header {
   background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   height: 50px;
   padding: 20px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .App-logo {
   height: 100%;
 }
 
-.Section-form {
-  padding: 2% 0 0 65%;
+.Avatar {
+  margin: 10% 0 0 70%;
 }
 
-.Searchbar {
+.Card {
+  height: 80%;
+  margin: auto;
+  width: 65%;
 }
 
-.Section-main {
-  margin: 5%;
+.Card-header {
+  margin-top: -30%;
+}
+
+.Card-title {
+  margin-top: -15%;
+  padding: 0 16%;
 }
 
 .Grid-container {
@@ -33,22 +41,10 @@
   padding: 0 10%;
 }
 
-.card {
-  width: 65%;
-  height: 80%;
-  margin: auto;
+.Section-form {
+  padding: 2% 0 0 65%;
 }
 
-.Card-title {
-  padding: 0 16%;
-  margin-top: -15%;
+.Section-main {
+  margin: 5%;
 }
-
-.Avatar {
-  margin: 10% 0 0 70%;
-}
-
-.Card-header {
-  margin-top: -30%;
-}
-

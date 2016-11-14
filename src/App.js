@@ -61,7 +61,6 @@ class App extends Component {
           </header>
           <form className="Section-form">
             <AutoComplete
-              className="Searchbar"
               hintText={<span><i className="material-icons">search</i> Search candidates...</span>}
               dataSource={this.state.candidates}
               onUpdateInput={this.handleUpdateInput}
