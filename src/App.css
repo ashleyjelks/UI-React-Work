@@ -22,15 +22,21 @@
   height: 80%;
   margin: auto;
   width: 65%;
+  word-wrap: break-word;
+  overflow: auto;
 }
 
 .Card-header {
   margin-top: -30%;
+  word-wrap: break-word;
+  overflow: auto;
 }
 
 .Card-title {
   margin-top: -15%;
   padding: 0 16%;
+  word-wrap: break-word;
+  overflow: auto;
 }
 
 .Grid-container {
