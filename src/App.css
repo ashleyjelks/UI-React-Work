@@ -14,37 +14,17 @@
   height: 100%;
 }
 
-.Avatar {
-  margin: 10% 0 0 70%;
+
+.Image--artist {
+ padding: 1%;
+ max-width: 250px;
+ object-fit: scale-down;
 }
 
-.Card {
-  height: 80%;
-  margin: auto;
-  width: 65%;
-  word-wrap: break-word;
-  overflow: auto;
-}
-
-.Card-header {
-  margin-top: -30%;
-  word-wrap: break-word;
-  overflow: auto;
-}
-
-.Card-title {
-  margin-top: -15%;
-  padding: 0 16%;
-  word-wrap: break-word;
-  overflow: auto;
-}
-
-.Grid-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 0 10%;
+@media (max-width: 768px) {
+  .Grid-container {
+    columns: 2;
+  }
 }
 
 .Section-form {
