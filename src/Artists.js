@@ -13,7 +13,7 @@ const Artists = ({ artists }) => {
             className="Grid-item--col"
           >
             <p>{artist.artistName}</p>
-            {artist.description !== undefined ? <p>{artist.description}</p> : <div></div>}
+            {artist.description !== undefined ? <p>{artist.description}</p> : null}
           <img
             className="Image--artist"
             src={artist.img_url}

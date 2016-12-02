@@ -18,7 +18,7 @@ const NavBar = ({ handleSearch }) => {
       </Navbar.Header>
       <Navbar.Form pullRight>
         <FormGroup>
-          <FormControl id="searchInput" type="text" placeholder="Search" />
+          <FormControl id="searchInput" type="text" placeholder="Search Artists" />
         </FormGroup>
         {' '}
         <Button id="submitSearch" type="submit" onClick={searchArtist}>Submit</Button>
