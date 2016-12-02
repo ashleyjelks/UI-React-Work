@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+// import request from 'request';
 import './App.css';
 import Artists from './Artists';
-import AutoComplete from 'material-ui/AutoComplete';
+import NavBar from './Nav';
 
 class App extends Component {
   constructor(props) {
@@ -9,9 +10,10 @@ class App extends Component {
 
     this.state = {
       artists: [],
+      searchArtists: ''
     };
+    // this.handleSearch = this.handleSearch.bind(this);
   }
-
   componentDidMount() {
     fetch('/artists.json')
       .then((response) => {
@@ -22,8 +24,7 @@ class App extends Component {
           artists: artists,
       });
     })
-  }
-
+  };
   handleUpdateInput = (value, artists) => {
     if (value) {
         let matchedArtists = [];
@@ -41,29 +42,32 @@ class App extends Component {
       this.componentDidMount()
     }
   };
+  handleSearch(searchInput) {
+    console.log(searchInput);
+    fetch(`http://api-3283.iheart.com/api/v1/catalog/searchAll?keywords=${searchInput}&queryTrack=false&queryBundle=false&queryArtist=true&queryStation=false&queryFeaturedStation=false&queryTalkShow=false&queryTalkTheme=false&queryKeyword=false&countryCode=US`,
+    (err, res, body)=> {
+      if (!err && res.statusCode === 200) {
+        console.log(body)
+      }
+    })
+  }
 
   render() {
-    if (this.state.artists !== 0) {
-      return (
-        <div className="App">
-          <header className="App-header">
-            <img src="https://upload.wikimedia.org/wikipedia/en/3/3a/IHeartRadio_logo.png" className="App-logo" alt="IHeartRadio logo" />
-          </header>
-          <form className="Section-form">
-            <AutoComplete
-              hintText={<span><i className="material-icons">search</i> Search artists...</span>}
-              dataSource={this.state.artists}
-              onUpdateInput={this.handleUpdateInput}
-            />
-          </form>
-          <main className="Section-main">
-            <Artists artists={this.state.artists} />
-          </main>
-        </div>
-      );
-    } else {
-      return null
-    }
+    return (
+      <div className="App">
+        <header className="App-header">
+          <NavBar handleSearch={this.handleSearch} />
+        </header>
+          {/*<AutoComplete
+            hintText={<span><i className="material-icons">search</i> Search artists...</span>}
+            dataSource={this.state.artists}
+            onUpdateInput={this.handleUpdateInput}
+          />*/}
+        <main className="Section-main">
+          <Artists artists={this.state.artists} />
+        </main>
+      </div>
+    );
   }
 }
 
