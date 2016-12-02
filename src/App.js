@@ -35,32 +35,32 @@ class App extends Component {
       return response.json()
     }).then((response) => {
       let searchResults = response.artists;
-      let firstSixSearchResults = []
-      for (let i = 0; i < 6; i++) {
-        firstSixSearchResults.push(searchResults[i])
+      let limitedSearchResults = []
+      if (searchResults.length >= 6) {
+        for (let i = 0; i < 6; i++) {
+          limitedSearchResults.push(searchResults[i])
+        }
+      } else {
+        for (let i = 0; i < searchResults.length; i++) {
+          limitedSearchResults.push(searchResults[i])
+        }
       }
+      return limitedSearchResults
+    }).then((limitedSearchResults) => {
+      let searchResultArtists = [];
+      limitedSearchResults.map((artistData) => {
+      let img_url = `http://iscale.iheart.com/catalog/artist/${artistData.artistId}?ops=fit(250,0)`;
+      let addSearch = {};
+      addSearch.artistName = artistData.artistName;
+      addSearch.img_url = img_url;
+      searchResultArtists.push(addSearch);
       return this.setState({
-        searchedArtists: firstSixSearchResults
+        artists: searchResultArtists
       })
     })
-  }
-  handleUpdateInput = (value, artists) => {
-    if (value) {
-        let matchedArtists = [];
-        let searchedArtists = this.state.artists;
-        value = value.charAt(0).toUpperCase() + value.slice(1);
-        for (var i = 0; i < searchedArtists.length; i++) {
-          if (searchedArtists[i].first_name.includes(value) || searchedArtists[i].last_name.includes(value)) {
-            matchedArtists.push(searchedArtists[i])
-          }
-        this.setState({
-          artists: matchedArtists
-        })
-      }
-    } else {
-      this.componentDidMount()
-    }
-  };
+  })
+};
+
   render() {
     return (
       <div className="App">
