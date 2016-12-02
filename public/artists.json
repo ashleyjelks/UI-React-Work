@@ -1,7 +1,7 @@
-[{"id":1,"artist_name":"The Weeknd","description":"Feat. August Alsina, Jeremih and more","img_url":"http://iscale.iheart.com/catalog/artist/744880?ops=fit(250,0)"},
-{"id":2,"artist_name":"Selena Gomez","description":"Feat. Ariana Grande, Demi Lovato and more","img_url":"http://iscale.iheart.com/catalog/artist/57706?ops=fit(250,0)"},
-{"id":3,"artist_name":"R. City","description":"Feat. Nelly, Iyaz, Wiz Khalifa and more","img_url":"http://iscale.iheart.com/catalog/artist/30005067?ops=fit(250,0)"},
-{"id":4,"artist_name":"Justin Bieber","description":"Feat. Shawn Mendes, One Direction and more","img_url":"http://iscale.iheart.com/catalog/artist/44368?ops=fit(250,0)"},
-{"id":5,"artist_name":"Major Lazer","description":"Feat. Iyaz, Dillon Francis & DJ Snake and more","img_url":"http://iscale.iheart.com/catalog/artist/43557?ops=fit(250,0)"},
-{"id":6,"artist_name":"Taylor Swift","description":"Feat. Meghan Trainor, Katy Perry and more","img_url":"http://iscale.iheart.com/catalog/artist/33221?ops=fit(250,0)"}
+[{"id":1,"artistName":"The Weeknd","description":"Feat. August Alsina, Jeremih and more","img_url":"http://iscale.iheart.com/catalog/artist/744880?ops=fit(250,0)"},
+{"id":2,"artistName":"Selena Gomez","description":"Feat. Ariana Grande, Demi Lovato and more","img_url":"http://iscale.iheart.com/catalog/artist/57706?ops=fit(250,0)"},
+{"id":3,"artistName":"R. City","description":"Feat. Nelly, Iyaz, Wiz Khalifa and more","img_url":"http://iscale.iheart.com/catalog/artist/30005067?ops=fit(250,0)"},
+{"id":4,"artistName":"Justin Bieber","description":"Feat. Shawn Mendes, One Direction and more","img_url":"http://iscale.iheart.com/catalog/artist/44368?ops=fit(250,0)"},
+{"id":5,"artistName":"Major Lazer","description":"Feat. Iyaz, Dillon Francis & DJ Snake and more","img_url":"http://iscale.iheart.com/catalog/artist/43557?ops=fit(250,0)"},
+{"id":6,"artistName":"Taylor Swift","description":"Feat. Meghan Trainor, Katy Perry and more","img_url":"http://iscale.iheart.com/catalog/artist/33221?ops=fit(250,0)"}
 ]

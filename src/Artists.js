@@ -12,12 +12,12 @@ const Artists = ({ artists }) => {
             key={index}
             className="Grid-item--col"
           >
-            <p>{artist.artist_name}</p>
+            <p>{artist.artistName}</p>
             <p>{artist.description}</p>
           <img
             className="Image--artist"
             src={artist.img_url}
-            alt={'Image of music artist: ' + artists.artist_name}
+            alt={'Image of music artist: ' + artists.artistName}
           />
         </Col>
       ))}
