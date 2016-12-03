@@ -1,5 +1,6 @@
 import React from 'react';
-import { Navbar, FormGroup, Button, FormControl } from 'react-bootstrap';
+import { Navbar, FormGroup, Button, FormControl, Image } from 'react-bootstrap';
+
 const NavBar = ({ handleSearch }) => {
 
   const searchArtist = () => {
@@ -8,11 +9,16 @@ const NavBar = ({ handleSearch }) => {
   };
 
   return (
-    <Navbar>
+    <Navbar inverse>
       <Navbar.Header>
         <Navbar.Brand>
-          <a href="#">
-            <img src="https://upload.wikimedia.org/wikipedia/en/3/3a/IHeartRadio_logo.png" className="App-logo" alt="IHeartRadio logo" />
+          <a href="/">
+            <Image
+              responsive
+              src="http://www.iheart.com/assets/logo-white.508aaeed25e40622317ee06bf5acccf8.png?rev=7.19.2"
+              className="App-logo"
+              alt="IHeartRadio logo"
+            />
           </a>
         </Navbar.Brand>
       </Navbar.Header>
@@ -21,7 +27,7 @@ const NavBar = ({ handleSearch }) => {
           <FormControl id="searchInput" type="text" placeholder="Search Artists" />
         </FormGroup>
         {' '}
-        <Button id="submitSearch" type="submit" onClick={searchArtist}>Submit</Button>
+        <Button type="submit" onClick={searchArtist}>Submit</Button>
       </Navbar.Form>
     </Navbar>
   );

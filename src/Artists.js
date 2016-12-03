@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Col, Row} from 'react-bootstrap';
+import { Grid, Col, Row, Image} from 'react-bootstrap';
 
 const Artists = ({ artists }) => {
   return (
@@ -10,15 +10,18 @@ const Artists = ({ artists }) => {
             md={4}
             sm={6}
             key={index}
-            className="Grid-item--col"
+            className="Grid--item__col"
           >
-            <p>{artist.artistName}</p>
-            {artist.description !== undefined ? <p>{artist.description}</p> : null}
-          <img
+          <Image
             className="Image--artist"
+            responsive
+            rounded
             src={artist.img_url}
-            alt={'Image of music artist: ' + artists.artistName}
+            alt={'Image of music artist: ' + artist.artistName}
           />
+          <span className="Artist--name">{artist.artistName}</span>
+          <br />
+          {artist.description !== undefined ? <span className="Artist--description">{artist.description}</span> : null}
         </Col>
       ))}
       </Row>

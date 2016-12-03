@@ -1,36 +1,50 @@
 .App {
   background-color: #f1f1f2;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.App-header {
-  background-color: #fff;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  height: 50px;
-  padding: 20px;
+  font-family: 'Dosis', sans-serif;
 }
 
 .App-logo {
-  height: 100%;
+  height: auto;
+  max-height: 90%;
+  max-width: 90%;
+  padding-top: 5%;
+  width: auto;
 }
 
+.Artist--description {
+  font-size: 15px;
+}
+
+.Artist--name {
+  font-size: 20px;
+}
+
+.Grid--item__col {
+  margin-bottom: 20px;
+}
 
 .Image--artist {
- padding: 1%;
  max-width: 250px;
- object-fit: scale-down;
+ width: 100%;
 }
 
-@media (max-width: 768px) {
+.navbar-brand {
+  padding: 0;
+}
+
+.Section--main {
+  margin: 10%;
+}
+
+@media screen and (max-width: 768px) {
+  .col-sm-6 {
+    width: auto;
+  }
+  .Grid--item__col {
+    margin-bottom: 0;
+  }
   .Grid-container {
-    columns: 2;
+    column-count: 2;
   }
 }
 
-.Section-form {
-  padding: 2% 0 0 65%;
-}
-
-.Section-main {
-  margin: 5%;
-}

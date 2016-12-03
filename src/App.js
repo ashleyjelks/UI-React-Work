@@ -9,8 +9,8 @@ class App extends Component {
 
     this.state = {
       artists: [],
-      searchedArtists: []
     };
+
     this.handleSearch = this.handleSearch.bind(this);
   }
   componentDidMount() {
@@ -32,10 +32,10 @@ class App extends Component {
         'Accept': 'application/json',
       },
     }).then((response) => {
-      return response.json()
+      return response.json();
     }).then((response) => {
       let searchResults = response.artists;
-      let limitedSearchResults = []
+      let limitedSearchResults = [];
       if (searchResults.length >= 6) {
         for (let i = 0; i < 6; i++) {
           limitedSearchResults.push(searchResults[i])
@@ -45,29 +45,29 @@ class App extends Component {
           limitedSearchResults.push(searchResults[i])
         }
       }
-      return limitedSearchResults
+      return limitedSearchResults;
     }).then((limitedSearchResults) => {
       let searchResultArtists = [];
       limitedSearchResults.map((artistData) => {
-      let img_url = `http://iscale.iheart.com/catalog/artist/${artistData.artistId}?ops=fit(250,0)`;
-      let addSearch = {};
-      addSearch.artistName = artistData.artistName;
-      addSearch.img_url = img_url;
-      searchResultArtists.push(addSearch);
-      return this.setState({
-        artists: searchResultArtists
-      })
-    })
-  })
-};
+        let img_url = `http://iscale.iheart.com/catalog/artist/${artistData.artistId}?ops=fit(250,0)`;
+        let addSearch = {};
+        addSearch.artistName = artistData.artistName;
+        addSearch.img_url = img_url;
+        searchResultArtists.push(addSearch);
+        return this.setState({
+          artists: searchResultArtists
+        });
+      });
+    });
+  };
 
   render() {
     return (
       <div className="App">
-        <header className="App-header">
+        <header>
           <NavBar handleSearch={this.handleSearch} />
         </header>
-        <main className="Section-main">
+        <main className="Section--main">
           <Artists artists={this.state.artists} />
         </main>
       </div>
